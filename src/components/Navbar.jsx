@@ -1,7 +1,8 @@
+import { SocialIcon } from "react-social-icons";
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { SocialIcons } from "react-social-icons";
-export const Navbar = () => {
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+
+export default function Navbar() {
 	return (
 		<header className='bg-red-600'>
 			<div className='container mx-auto flex justify-between'>
@@ -64,30 +65,23 @@ export const Navbar = () => {
 						CONTACT ME
 					</NavLink>
 				</nav>
-				<div>
-					<SocialIcons
+				<div className='inline-flex py-3 px-3 my-6'>
+					<SocialIcon
 						url='https://www.linkedin.com/in/tolgakara/'
 						className='mr-4'
 						target='_blank'
 						fgColor='#fff'
 						style={{ height: 35, width: 35 }}
 					/>
-					<SocialIcons
+					<SocialIcon
 						url='https://github.com/TolgaKara'
 						className='mr-4'
 						target='_blank'
 						fgColor='#fff'
 						style={{ height: 35, width: 35 }}
 					/>
-					{/* <SocialIcons
-						url=''
-						className='mr-4'
-						target='_blank'
-						fgColor='#fff'
-						style={{ height: 35, width: 35 }}
-					/> */}
 				</div>
 			</div>
 		</header>
 	);
-};
+}

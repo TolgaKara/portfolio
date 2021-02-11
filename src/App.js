@@ -6,11 +6,12 @@ import SinglePost from "./components/SinglePost";
 import Post from "./components/Post";
 import Project from "./components/Project";
 import Login from "./components/Login";
-import { Navbar } from "./components/Navbar";
+import Navbar from "./components/Navbar";
+import { Fragment } from "react";
 
 function App() {
 	return (
-		<BrowserRouter>
+		<Fragment>
 			<Navbar />
 			<Switch>
 				<Route component={Landingpage} path='/' exact />
@@ -20,7 +21,7 @@ function App() {
 				<Route component={Project} path='/project' />
 				<Route component={Login} path='/admin' />
 			</Switch>
-		</BrowserRouter>
+		</Fragment>
 	);
 }
 
