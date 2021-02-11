@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { SocialIcons } from "react-social-icons";
 export const Navbar = () => {
 	return (
 		<header className='bg-red-600'>
