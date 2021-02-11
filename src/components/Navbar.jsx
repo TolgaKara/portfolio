@@ -63,7 +63,29 @@ export const Navbar = () => {
 						CONTACT ME
 					</NavLink>
 				</nav>
-				<div></div>
+				<div>
+					<SocialIcons
+						url='https://www.linkedin.com/in/tolgakara/'
+						className='mr-4'
+						target='_blank'
+						fgColor='#fff'
+						style={{ height: 35, width: 35 }}
+					/>
+					<SocialIcons
+						url='https://github.com/TolgaKara'
+						className='mr-4'
+						target='_blank'
+						fgColor='#fff'
+						style={{ height: 35, width: 35 }}
+					/>
+					{/* <SocialIcons
+						url=''
+						className='mr-4'
+						target='_blank'
+						fgColor='#fff'
+						style={{ height: 35, width: 35 }}
+					/> */}
+				</div>
 			</div>
 		</header>
 	);
