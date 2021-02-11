@@ -17,49 +17,49 @@ export default function Navbar() {
 					</NavLink>
 					<NavLink
 						to='/about'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
+						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-white font-bold'
 						activeClassName='text-red-100 bg-red-700'
 					>
 						ABOUT
 					</NavLink>
 					<NavLink
 						to='/workexperience'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
+						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-white font-bold'
 						activeClassName='text-red-100 bg-red-700'
 					>
 						WORK EXPERIENCE
 					</NavLink>
 					<NavLink
 						to='/project'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
+						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-white font-bold'
 						activeClassName='text-red-100 bg-red-700'
 					>
 						PROJECT
 					</NavLink>
 					<NavLink
 						to='/education'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
+						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-white font-bold'
 						activeClassName='text-red-100 bg-red-700'
 					>
 						EDUCATION
 					</NavLink>
 					<NavLink
 						to='/faq'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
+						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-white font-bold'
 						activeClassName='text-red-100 bg-red-700'
 					>
 						FAQ
 					</NavLink>
 					<NavLink
 						to='/blog'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
+						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-white font-bold'
 						activeClassName='text-red-100 bg-red-700'
 					>
 						BLOG
 					</NavLink>
 					<NavLink
 						to='/contactme'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
+						className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-white font-bold'
 						activeClassName='text-red-100 bg-red-700'
 					>
 						CONTACT ME
