@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import sanityClient from "../../client.js";
 
 export const Blog = () => {
+	const [post, setPost] = useState(null);
+	useEffect(() => {
+		sanityClient
+			.fetch(
+				`*[_type == "post"]{
+      title,
+      slug,
+      mainImage{
+        _id,
+        url
+      },
+      alt
+    }`
+			)
+			.then((response) => setPost(response))
+			.catch(console.error);
+	});
 	return (
-		<div>
+		<div className='container mx-auto'>
+			<h1 className='text-5xl flex justify-center cursive mt-12 mb-6'>📜 Blog</h1>
+			<h2 className='text-2xl text-gray-600 flex justify-center mb-12'>👋 Read, Relax & Enjoy</h2>
 			<div className='flex  p-8 w-full overflow-hidden mx-auto'>
-				<Link>
+				<Link className='mr-12' to={`/blog/post/${post.slug.current}}`} key={post.slug.current}>
 					<div className='relative flex shadow-md rounded-lg flex-col items-center justify-around p-4 mr-4 w-80 h-80 rounded-2xl '>
 						<div className='absolute z-0 w-full h-full text-white transform scale-x-105 scale-y-95 bg-yellow-300 rounded-xl -rotate-2 '></div>
 						<div className='absolute z-0 w-full h-full text-white transform scale-x-105 scale-y-95 bg-yellow-400 rounded-xl rotate-2 '></div>
