@@ -2,6 +2,8 @@ import { SocialIcon } from "react-social-icons";
 import React from "react";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import { Logo } from "./Logo";
+import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
 	return (
@@ -66,20 +68,13 @@ export default function Navbar() {
 					</NavLink>
 				</nav>
 				<div className='inline-flex py-3 px-3 my-6'>
-					{/* <SocialIcon
-						url='https://www.linkedin.com/in/tolgakara/'
-						className='mr-4'
-						target='_blank'
-						fgColor='#fff'
-						style={{ height: 35, width: 35 }}
-					/>
-					<SocialIcon
-						url='https://github.com/TolgaKara'
-						className='mr-4'
-						target='_blank'
-						fgColor='#fff'
-						style={{ height: 35, width: 35 }}
-					/> */}
+					<a href='https://www.linkedin.com/in/tolgakara/' target='_blank'>
+						<FaLinkedin className='text-yellow-600 text-2xl hover:text-yellow-700 cursor-pointer' />
+					</a>
+
+					<a href='https://www.linkedin.com/in/tolgakara/' target='_blank'>
+						<FaLinkedin className='text-yellow-600 text-2xl hover:text-yellow-700 cursor-pointer' />
+					</a>
 				</div>
 			</div>
 		</header>
