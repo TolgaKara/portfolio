@@ -1,3 +1,8 @@
 {
-	"jshint.enable": false
+	"jshint.enable": false,
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": false,
+		"strings": true
+	}
 }
