@@ -19,49 +19,49 @@ export default function Navbar() {
 					</NavLink>
 					<NavLink
 						to='/about'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
+						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						ABOUT
 					</NavLink>
 					<NavLink
 						to='/workexperience'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
+						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						WORK EXPERIENCE
 					</NavLink>
 					<NavLink
 						to='/project'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
+						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						PROJECT
 					</NavLink>
 					<NavLink
 						to='/education'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
+						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						EDUCATION
 					</NavLink>
 					<NavLink
 						to='/faq'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
+						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						FAQ
 					</NavLink>
 					<NavLink
 						to='/blog'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
+						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						BLOG
 					</NavLink>
 					<NavLink
 						to='/contactme'
-						className='inline-flex items-center py-3 px-3 my-6 rounded text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
+						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						CONTACT ME
