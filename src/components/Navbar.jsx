@@ -18,49 +18,49 @@ export default function Navbar() {
 						<Logo />
 					</NavLink>
 					<NavLink
-						to='/about'
+						to='#about'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						ABOUT
 					</NavLink>
 					<NavLink
-						to='/workexperience'
+						to='#work-experience'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						WORK EXPERIENCE
 					</NavLink>
 					<NavLink
-						to='/project'
+						to='#project'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						PROJECT
 					</NavLink>
 					<NavLink
-						to='/education'
+						to='#education'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						EDUCATION
 					</NavLink>
 					<NavLink
-						to='/faq'
+						to='#faq'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						FAQ
 					</NavLink>
 					<NavLink
-						to='/blog'
+						to='#blog'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						BLOG
 					</NavLink>
 					<NavLink
-						to='/contactme'
+						to='#contact-me'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
