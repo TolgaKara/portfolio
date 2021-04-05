@@ -6,7 +6,7 @@ import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
 	return (
-		<header className='bg-white shadow'>
+		<header className='bg-white shadow '>
 			<div className='container mx-auto flex justify-between text-green-800'>
 				<nav>
 					<NavLink
@@ -44,6 +44,13 @@ export default function Navbar() {
 						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						EDUCATION
+					</NavLink>
+					<NavLink
+						to='/skills'
+						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
+						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+					>
+						SKILL
 					</NavLink>
 					<NavLink
 						to='/faq'
