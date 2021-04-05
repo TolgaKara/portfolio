@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import PropTypes from "prop-types";
-import Landingpage from "./components/Landingpage";
-import About from "./components/About";
-import SinglePost from "./components/SinglePost";
-import Project from "./components/Project";
-import Login from "./components/Login";
-import Navbar from "./components/Navbar";
+import Landingpage from "./pages/Landingpage/Landingpage";
+import About from "./components/organism/About";
+import SinglePost from "./components/organism/SinglePost";
+import Project from "./components/organism/Project";
+import Login from "./components/organism/Login";
+import Navbar from "./components/molecules/Navbar";
 import { Fragment } from "react";
 import { Blog } from "./pages/Blog/Blog";
 

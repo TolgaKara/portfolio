@@ -1,8 +1,10 @@
 import { SocialIcon } from "react-social-icons";
 import React from "react";
-import { Logo } from "./Logo";
+import { Logo } from "../atoms/Logo";
 import { FaGithubAlt, FaLinkedin } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { scroller, Link, animateScroll as scroll } from "react-scroll";
+
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
 	return (
@@ -13,66 +15,91 @@ export default function Navbar() {
 						className='inflex-flex items-center py-6 px-3 mr-4 font-bold cursive tracking-widest'
 						to='/'
 						exact
+						onClick={() => scroll.scrollToTop()}
 					>
 						<Logo />
 					</NavLink>
-					<NavLink
-						exact
-						to='/about'
-						className=' items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
-						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+
+					<Link
+						to='about'
+						spy={true}
+						smooth={true}
+						duration={500}
+						className='cursor-pointer items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
+						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						ABOUT
-					</NavLink>
-					<NavLink
-						to='/work-experience'
+					</Link>
+					<Link
+						to='work-experience'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
-						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						spy={true}
+						smooth={true}
+						duration={500}
 					>
 						WORK EXPERIENCE
-					</NavLink>
-					<NavLink
-						to='/project'
+					</Link>
+					<Link
+						to='project'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
-						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						spy={true}
+						smooth={true}
+						duration={500}
 					>
 						PROJECT
-					</NavLink>
-					<NavLink
-						to='/education'
+					</Link>
+					<Link
+						to='education'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
-						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						spy={true}
+						smooth={true}
+						duration={500}
 					>
 						EDUCATION
-					</NavLink>
-					<NavLink
-						to='/skills'
+					</Link>
+					<Link
+						to='skill'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
-						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						spy={true}
+						smooth={true}
+						duration={500}
 					>
 						SKILL
-					</NavLink>
-					<NavLink
-						to='/faq'
+					</Link>
+					<Link
+						to='faq'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
-						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						spy={true}
+						smooth={true}
+						duration={500}
 					>
 						FAQ
-					</NavLink>
-					<NavLink
-						to='/blog'
+					</Link>
+					<Link
+						to='blog'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
-						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						spy={true}
+						smooth={true}
+						duration={500}
 					>
 						BLOG
-					</NavLink>
-					<NavLink
-						to='/contact-me'
+					</Link>
+					<Link
+						to='contact-me'
 						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
-						activeClassName='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+						spy={true}
+						smooth={true}
+						duration={500}
 					>
 						CONTACT ME
-					</NavLink>
+					</Link>
 				</nav>
 				<div className='inline-flex py-3 px-3 my-6'>
 					<a href='https://github.com/TolgaKara' target='_blank'>
@@ -82,12 +109,9 @@ export default function Navbar() {
 					<a href='https://www.linkedin.com/in/tolgakara/' target='_blank'>
 						<FaLinkedin className='text-yellow-600 text-2xl hover:text-yellow-700 cursor-pointer mr-4' />
 					</a>
-					<Link
-						className='bg-yellow-400 rounded px-5 text-yellow-600 font-semibold uppercase'
-						href=''
-					>
+					<a className='bg-yellow-400 rounded px-5 text-yellow-600 font-semibold uppercase' href=''>
 						Hire
-					</Link>
+					</a>
 				</div>
 			</div>
 		</header>
