@@ -1,20 +1,11 @@
 import React from "react";
+import { Logo } from "../atoms/Logo";
 
 export const Footer = () => {
 	return (
-		<footer className='container mx-auto text-xs border-t border-gray-400 py-10 flex items-center justify-between'>
-			<ul className='flex items-center space-x-12'>
-				<li>&copy; 2020 Tolga Kara</li>
-				<li>
-					<a href='#' className='text-blue-600 hover:underline'>
-						Blog
-					</a>
-				</li>
-			</ul>
-			<div className='mx-16'>
-				<a href='#'>
-					<Logo />
-				</a>
+		<footer className='h-screen text-sm flex items-center justify-center'>
+			<div className='border-t border-gray-400 py-5 w-full text-center'>
+				<p className='mr-24'>© Tolga Kara</p>
 			</div>
 		</footer>
 	);
