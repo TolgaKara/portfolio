@@ -6,6 +6,7 @@ import SinglePost from "./components/organism/SinglePost";
 import Project from "./components/organism/Project";
 import Login from "./components/organism/Login";
 import Navbar from "./components/molecules/Navbar";
+import { Footer } from "./components/molecules/Footer";
 import { Fragment } from "react";
 import { Blog } from "./pages/Blog/Blog";
 
@@ -21,6 +22,7 @@ function App() {
 				<Route component={Project} path='/project' />
 				<Route component={Login} path='/admin' />
 			</Switch>
+			<Footer />
 		</Fragment>
 	);
 }

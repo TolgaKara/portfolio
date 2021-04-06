@@ -20,7 +20,7 @@ export default function Navbar() {
 						<Logo />
 					</NavLink>
 
-					<Link
+					<NavLink
 						to='about'
 						spy={true}
 						smooth={true}
@@ -29,77 +29,42 @@ export default function Navbar() {
 						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 					>
 						ABOUT
-					</Link>
-					<Link
+					</NavLink>
+					<NavLink
 						to='work-experience'
-						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
+						className='inline-flex items-center py-3 px-3 my-6 uppercase text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 						spy={true}
 						smooth={true}
 						duration={500}
 					>
-						WORK EXPERIENCE
-					</Link>
-					<Link
-						to='project'
-						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
-						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
-						spy={true}
-						smooth={true}
-						duration={500}
-					>
-						PROJECT
-					</Link>
-					<Link
-						to='education'
-						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
-						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
-						spy={true}
-						smooth={true}
-						duration={500}
-					>
-						EDUCATION
-					</Link>
-					<Link
-						to='skill'
-						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
-						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
-						spy={true}
-						smooth={true}
-						duration={500}
-					>
-						SKILL
-					</Link>
-					<Link
-						to='faq'
-						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
-						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
-						spy={true}
-						smooth={true}
-						duration={500}
-					>
-						FAQ
-					</Link>
-					<Link
+						Project
+					</NavLink>
+					<NavLink
 						to='blog'
-						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
+						className='inline-flex uppercase text-items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 						spy={true}
 						smooth={true}
 						duration={500}
 					>
-						BLOG
-					</Link>
-					<Link
-						to='contact-me'
-						className='inline-flex items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
+						Blog
+					</NavLink>
+					<NavLink
+						to='/resume'
+						className='inline-flex items-center uppercase py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
-						spy={true}
-						smooth={true}
-						duration={500}
 					>
-						CONTACT ME
-					</Link>
+						Resume
+					</NavLink>
+
+					<NavLink
+						to='/contact'
+						className='inline-flex uppercase items-center py-3 px-3 my-6  text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
+						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
+					>
+						Contact
+					</NavLink>
 				</nav>
 				<div className='inline-flex py-3 px-3 my-6'>
 					<a href='https://github.com/TolgaKara' target='_blank'>

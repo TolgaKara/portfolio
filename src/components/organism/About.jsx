@@ -12,11 +12,17 @@ export default function About() {
 					Excited to contribute to awesome projects
 				</p>
 				<h1 className='font-bold text-3xl'>👋 Welcome to my Portfolio</h1>
-				<p className=' mt-6 max-w-sm'>
+				<p className=' mt-6 max-w-sm '>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente qui laudantium,
 					blanditiis ducimus molestias quasi obcaecati unde magnam debitis veritatis impedit
 					reprehenderit delectus dolor dolore quaerat, accusamus iusto. Cum, quisquam!
 				</p>
+				<a
+					className='bg-yellow-600 py-3 rounded-full text-white font-semibold mt-3 shadow-md uppercase px-8 inline-block'
+					href=''
+				>
+					Let's talk !
+				</a>
 			</div>
 
 			<img className='' src={tolgaHappy} alt='' />
