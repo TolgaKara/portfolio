@@ -38,16 +38,22 @@ export const QuickSum = () => {
 				<li>
 					<h3>Follow me</h3>
 					<div className='flex text-2xl space-x-5'>
-						<a href='https://www.linkedin.com/in/tolgakara/'>
+						<a
+							className='hover:text-yellow-600 duration-300'
+							href='https://www.linkedin.com/in/tolgakara/'
+						>
 							<FaLinkedin />
 						</a>
-						<a href='https://github.com/TolgaKara'>
+						<a className='hover:text-yellow-600 duration-300' href='https://github.com/TolgaKara'>
 							<FaGithubSquare />
 						</a>
-						<a href='https://www.instagram.com/tolgakaradev/'>
+						<a
+							className='hover:text-yellow-600 duration-300'
+							href='https://www.instagram.com/tolgakaradev/'
+						>
 							<FiInstagram />
 						</a>
-						<a href='https://dev.to/tolgakara'>
+						<a className='hover:text-yellow-600 duration-300' href='https://dev.to/tolgakara'>
 							<FaDev />
 						</a>
 					</div>
