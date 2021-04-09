@@ -31,7 +31,7 @@ export default function Navbar() {
 						ABOUT
 					</NavLink>
 					<NavLink
-						to='work-experience'
+						to='project'
 						className='inline-flex items-center py-3 px-3 my-6 uppercase text-black font-semibold hover:text-yellow-600 transition duration-300 ease-in-out'
 						activeClass='text-yellow-600 border-b-2 border-yellow-600 font-bold'
 						spy={true}
