@@ -1,9 +1,11 @@
 import React from "react";
 import tolgaHappy from "../../images/tolga/tolgaHappy.png";
+import { FiInstagram } from "react-icons/fi/";
+import { FaGithubSquare, FaLinkedin, FaDev } from "react-icons/fa/";
 
 export const QuickSum = () => {
 	return (
-		<div className='container mx-auto flex justify-between items-center' id='about'>
+		<div className='container mx-auto flex justify-between items-center mt-24' id='about'>
 			<div className='w-1/3'>
 				<p className='leading-tight text-yellow-600 font-semibold uppercase opacity-60'>
 					Excited to contribute to awesome projects
@@ -35,7 +37,20 @@ export const QuickSum = () => {
 				</li>
 				<li>
 					<h3>Follow me</h3>
-					<p> Coffee, Coding, learning, Chess & Videogames</p>
+					<div className='flex text-2xl space-x-5'>
+						<a href='https://www.linkedin.com/in/tolgakara/'>
+							<FaLinkedin />
+						</a>
+						<a href='https://github.com/TolgaKara'>
+							<FaGithubSquare />
+						</a>
+						<a href='https://www.instagram.com/tolgakaradev/'>
+							<FiInstagram />
+						</a>
+						<a href='https://dev.to/tolgakara'>
+							<FaDev />
+						</a>
+					</div>
 				</li>
 			</ul>
 		</div>
