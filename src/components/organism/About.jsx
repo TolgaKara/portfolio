@@ -7,7 +7,14 @@ export default function About() {
 
 	return (
 		<div className='container mx-auto flex justify-between items-center' id='about'>
-			About
+			<div className='content w-8/12'>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ut sunt recusandae mollitia
+					voluptatem quae sit odit, natus quibusdam sint minus ipsum fugiat cumque a? Sint nulla
+					fuga illum asperiores.
+				</p>
+			</div>
+			<img className='place-items-center' src={tolgaHappy} alt='' />
 		</div>
 	);
 }
