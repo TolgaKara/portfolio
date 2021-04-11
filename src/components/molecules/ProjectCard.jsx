@@ -2,7 +2,7 @@ import React from "react";
 
 export const ProjectCard = () => {
 	return (
-		<div class='w-1/5 py-5 px-2 shadow-md rounded-md border-2 space-y-4 mx-5 my-10 h-full'>
+		<div class='w-1/5 py-5 px-2 shadow-md rounded-md border-2 space-y-4 mx-3 my-5 h-full'>
 			<img
 				class='rounded-lg relative -mt-8 opacity-90 shadow-xl'
 				src='https://i.pinimg.com/originals/16/61/fa/1661fa505fe3bc2f022a5004fda0b8e8.png'
