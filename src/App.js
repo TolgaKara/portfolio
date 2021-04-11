@@ -9,6 +9,7 @@ import Navbar from "./components/molecules/Navbar";
 import { Footer } from "./components/molecules/Footer";
 import { Fragment } from "react";
 import { Blog } from "./pages/Blog/Blog";
+import { ContactMe } from "./components/organism/ContactMe";
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 				<Route component={SinglePost} path='/blog/post/:slug' />
 				<Route component={Blog} path='/blog' />
 				<Route component={Project} path='/project' />
+				<Route component={ContactMe} path='/contact' />
 				<Route component={Login} path='/admin' />
 			</Switch>
 			<Footer />
