@@ -2,6 +2,7 @@ import React from "react";
 import { Input } from "../atoms/Input";
 import { MainHeading } from "../atoms/MainHeading";
 import { TextArea } from "../atoms/TextArea";
+import tolgaFistBumb from "../../images/tolga/tolgaFistBumb.png";
 
 export const ContactMe = () => {
 	return (
@@ -12,6 +13,7 @@ export const ContactMe = () => {
 					<p className='text-4xl w-1/2 mt-10'>
 						Feel free to reach out to me if your wish to talk about something.
 					</p>
+					<img src={tolgaFistBumb} className='w-96' alt='Me fistBumbing to have a chat' />
 					<div className='flex flex-col mt-5 text-gray-500'>
 						<p>tolgakara2.0@gmail.com</p>
 						<p>0000 000 000 0000</p>
