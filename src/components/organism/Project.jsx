@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectCard } from "../molecules/ProjectCard";
 import { MainHeading } from "../atoms/MainHeading";
-import { ProjectLayout } from "../atoms/ProjectLayout";
+import { ProjectLayout } from "../layout/ProjectLayout";
 
 export default function Project() {
 	return (

@@ -2,20 +2,26 @@ import React from "react";
 import tolgaHappy from "../../images/tolga/tolgaHappy.png";
 import { FiInstagram } from "react-icons/fi/";
 import { FaGithubSquare, FaLinkedin, FaDev } from "react-icons/fa/";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
+import { MainPageLayout } from "../layout/MainPageLayout";
+import { MainHeading } from "../atoms/MainHeading";
+import { Paragraph } from "../atoms/Paragraph";
+import { List } from "../atoms/List";
 
 export const QuickSum = () => {
+	const titleAnimation = {
+		hidden: { opacity: 0 },
+		show: { opacity: 1, transition: { duration: 2 } },
+	};
 	return (
-		<div className='container mx-auto flex justify-between items-center mt-24' id='about'>
+		<MainPageLayout>
 			<div className='w-1/3'>
-				<p className='leading-tight text-yellow-600 font-semibold uppercase opacity-60'>
-					Excited to contribute to awesome projects
-				</p>
-				<h1 className='font-bold text-3xl'>👋 Welcome to my Portfolio</h1>
-				<p className=' mt-6 max-w-sm '>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente qui laudantium,
-					blanditiis ducimus molestias quasi obcaecati unde magnam debitis veritatis impedit
-					reprehenderit delectus dolor dolore quaerat, accusamus iusto. Cum, quisquam!
-				</p>
+				<MainHeading
+					text='👋 Welcome to my Portfolio'
+					subHeading='Excited to contribute to awesome projects'
+				/>
+				<Paragraph type='cta'></Paragraph>
 				<a
 					className='bg-yellow-600 py-3 rounded-full text-white font-semibold mt-3 shadow-md uppercase px-8 inline-block'
 					href=''
@@ -27,38 +33,29 @@ export const QuickSum = () => {
 			<img className='' src={tolgaHappy} alt='' />
 
 			<ul className='space-y-4 ml-auto'>
-				<li>
-					<h3 className=''>Work Environment</h3>
-					<p> Coffee, Coding, learning, Chess & Videogames</p>
-				</li>
-				<li>
-					<h3>Interest</h3>
-					<p> Coffee, Coding, learning, Chess & Videogames</p>
-				</li>
-				<li>
-					<h3>Follow me</h3>
-					<div className='flex text-2xl space-x-5'>
-						<a
-							className='hover:text-yellow-600 duration-300'
-							href='https://www.linkedin.com/in/tolgakara/'
-						>
-							<FaLinkedin />
-						</a>
-						<a className='hover:text-yellow-600 duration-300' href='https://github.com/TolgaKara'>
-							<FaGithubSquare />
-						</a>
-						<a
-							className='hover:text-yellow-600 duration-300'
-							href='https://www.instagram.com/tolgakaradev/'
-						>
-							<FiInstagram />
-						</a>
-						<a className='hover:text-yellow-600 duration-300' href='https://dev.to/tolgakara'>
-							<FaDev />
-						</a>
-					</div>
-				</li>
+				<List heading='Work Environment' items={"Coffee, Coding, Learning, Chess & Videogames"} />
+				<List heading='Interests' items={"Coffee, Coding, Learning, Chess & Videogames"} />
+				<List heading='Follow Me'>
+					<a
+						className='hover:text-yellow-600 duration-300'
+						href='https://www.linkedin.com/in/tolgakara/'
+					>
+						<FaLinkedin />
+					</a>
+					<a className='hover:text-yellow-600 duration-300' href='https://github.com/TolgaKara'>
+						<FaGithubSquare />
+					</a>
+					<a
+						className='hover:text-yellow-600 duration-300'
+						href='https://www.instagram.com/tolgakaradev/'
+					>
+						<FiInstagram />
+					</a>
+					<a className='hover:text-yellow-600 duration-300' href='https://dev.to/tolgakara'>
+						<FaDev />
+					</a>
+				</List>
 			</ul>
-		</div>
+		</MainPageLayout>
 	);
 };

@@ -3,10 +3,18 @@ import { Input } from "../atoms/Input";
 import { MainHeading } from "../atoms/MainHeading";
 import { TextArea } from "../atoms/TextArea";
 import tolgaFistBumb from "../../images/tolga/tolgaFistBumb.png";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 export const ContactMe = () => {
 	return (
-		<div className='container mx-auto'>
+		<motion.div
+			variants={pageAnimation}
+			initial='hidden'
+			animate='show'
+			exit='exit'
+			className='container mx-auto'
+		>
 			<div className='flex justify-between mt-10'>
 				<div className='flex flex-col'>
 					<MainHeading text={"🤙 Contact Me"} subHeading={"Let's get in Touch"} />
@@ -41,6 +49,6 @@ export const ContactMe = () => {
 					</button>
 				</form>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
