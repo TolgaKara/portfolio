@@ -11,6 +11,7 @@ import { Fragment } from "react";
 import { Blog } from "./pages/Blog/Blog";
 import { ContactMe } from "./components/organism/ContactMe";
 import { AnimatePresence } from "framer-motion";
+import Resume from "./pages/Resume/Resume";
 
 function App() {
 	const location = useLocation();
@@ -24,6 +25,7 @@ function App() {
 					<Route component={SinglePost} path='/blog/post/:slug' />
 					<Route component={Blog} path='/blog' />
 					<Route component={Project} path='/project' />
+					<Route component={Resume} path='/resume' />
 					<Route component={ContactMe} path='/contact' />
 					<Route component={Login} path='/admin' />
 				</Switch>
