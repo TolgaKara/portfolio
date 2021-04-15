@@ -2,7 +2,7 @@ import React from "react";
 
 export const MainHeading = ({ text, subHeading }) => {
 	return (
-		<div className='flex flex-col justify-between'>
+		<div className='flex flex-col justify-start'>
 			<p className='leading-tight text-yellow-600 font-semibold uppercase opacity-60'>
 				{subHeading}
 			</p>

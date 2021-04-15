@@ -9,7 +9,9 @@ export const MainPageLayout = (props) => {
 			initial='hidden'
 			animate='show'
 			exit='exit'
-			className='container mx-auto flex justify-between items-center mt-10'
+			className={`container mx-auto flex ${
+				props.col ? "flex-col" : ""
+			} justify-between items-center mt-10`}
 		>
 			{props.children}
 		</motion.div>
