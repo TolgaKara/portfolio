@@ -2,7 +2,7 @@ import React from "react";
 
 export const SubNav = () => {
 	return (
-		<ul className='flex justify-start space-x-5 font-semibold  mt-3 uppercase mr-8'>
+		<ul className='flex justify-start space-x-5 font-semibold  mt-3 uppercase mr-8 pb-5'>
 			<li className='text-yellow-600'>
 				<a href=''>Education</a>
 			</li>
