@@ -9,8 +9,10 @@ export default function Resume() {
 	return (
 		<MainPageLayout col={true}>
 			<ResumeLayout>
-				<MainHeading text='Resume' />
-				<SubNav />
+				<div className=' py-14 divide-y-2 divide-y-reverse '>
+					<MainHeading text='Resume' />
+					<SubNav />
+				</div>
 				<Education />
 			</ResumeLayout>
 		</MainPageLayout>
