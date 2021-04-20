@@ -6,7 +6,13 @@ export const Education = () => {
 	return (
 		<div>
 			<Heading text='Education' />
-			<EducationDetails position='' date='' company='' bullet={[]} techStack={[]} />
+			<EducationDetails
+				position='Full Stack Web Developer Bootcamp'
+				date='Aug 2020 - Oct 2020'
+				company='Ironhack'
+				bullet={[]}
+				techStack={[]}
+			/>
 		</div>
 	);
 };
