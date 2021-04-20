@@ -10,6 +10,7 @@ export const Education = () => {
 				position='Full Stack Web Developer Bootcamp'
 				date='Aug 2020 - Oct 2020'
 				company='Ironhack'
+				companyURL='https://www.ironhack.com/en'
 				bullet={[]}
 				techStack={[]}
 			/>
