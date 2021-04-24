@@ -11,8 +11,8 @@ export const Education = () => {
 				date='Aug 2020 - Oct 2020'
 				company='Ironhack'
 				companyURL='https://www.ironhack.com/en'
-				bullet={[]}
-				techStack={[]}
+				tasks={["asd", "asd"]}
+				techStack={["Python", "Java"]}
 			/>
 		</div>
 	);
